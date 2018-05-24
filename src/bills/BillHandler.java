@@ -46,6 +46,10 @@ public class BillHandler {
         bills = temp;
     }
 
+    public Bill getBill(int index){
+        return bills[index];
+    }
+
     public int getIndex(String name){
         for (int i=0;i<bills.length;i++){
             if (bills[i].getName().toLowerCase().equals(name.toLowerCase())){

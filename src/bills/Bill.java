@@ -34,4 +34,8 @@ public class Bill {
     public double getTotal(){
         return total;
     }
+
+    public String toString(){
+        return name + "," + account + "," + dayOfMonth + "," + total;
+    }
 }

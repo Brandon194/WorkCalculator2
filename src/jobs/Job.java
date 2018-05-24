@@ -34,4 +34,8 @@ public class Job {
     public int getTaxRateInPercent(){
         return taxRateInPercent;
     }
+
+    public String toString(){
+        return name + "," + rateOfPay + "," + hoursWorked + "," + taxRateInPercent;
+    }
 }

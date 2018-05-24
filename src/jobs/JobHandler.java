@@ -4,8 +4,8 @@ public class JobHandler {
 
     private Job[] jobs;
 
-    public JobHandler(int numOfJobs){
-        jobs = new Job[numOfJobs];
+    public JobHandler(){
+        jobs = new Job[1];
     }
 
     public void addJob(String name, double rateOfPay){
@@ -83,5 +83,15 @@ public class JobHandler {
     }
     public Job[] getJobs(){
         return jobs;
+    }
+
+
+    public String toString(){
+        String returnable = "";
+        for (int i=0;i<jobs.length;i++){
+          returnable = returnable + jobs[i].toString();
+          returnable = returnable + "\n";
+        }
+        return returnable;
     }
 }
